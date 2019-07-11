@@ -1,0 +1,58 @@
+body{
+    margin: 0;
+    display: grid;
+    grid-template-areas: 'header header header header'
+                         'navbar navbar navbar navbar'
+                         'section section aside aside'
+                         'footer footer footer footer';
+    grid-template-rows: 30vh 20vh 40vh 35vh;
+    grid-gap: 5px;
+    background-color:beige
+}
+header{
+    grid-area:header;
+    background-color:palegreen;
+    display: flex;
+    justify-content: center;
+    align-items: center
+
+}
+
+header img {
+    width: 150px;
+    border-radius: 50%
+}
+
+
+nav{
+    grid-area: navbar;
+    background-color: burlywood;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    
+}
+
+
+nav a {
+    color: white;
+    font-size: 20pt;
+    font-weight: 900;
+    text-decoration: none; 
+}
+
+section{
+    grid-area: section;
+    background-image: url('unicornio.jpg');
+    background-size: cover;
+
+}
+aside{
+    grid-area: aside;
+    background-color:aquamarine;
+
+}
+footer{
+    grid-area: footer;
+    background-color:pink;
+}
